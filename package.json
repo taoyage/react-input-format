@@ -1,11 +1,15 @@
 {
-  "name": "format",
+  "name": "react-input-number-format",
   "version": "1.0.0",
-  "description": "number fromat",
+  "description": "A react component number format",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "react",
+    "format"
+  ],
   "author": "accord",
   "license": "ISC"
 }

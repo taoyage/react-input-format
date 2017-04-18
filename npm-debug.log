@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/accord/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/accord/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/accord/Desktop/fresh start/NumberFormat',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/accord/.npm/react-input-number-format/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/accord/.npm correctMkdir not in flight; initializing
+10 verbose makeDirectory /Users/accord/.npm creation not in flight; initializing
+11 silly makeDirectory /Users/accord/.npm uid: 501 gid: 20
+12 info lifecycle react-input-number-format@1.0.0~prepublish: react-input-number-format@1.0.0
+13 silly lifecycle react-input-number-format@1.0.0~prepublish: no script for prepublish, continuing
+14 verbose tar pack [ '/Users/accord/.npm/react-input-number-format/1.0.0/package.tgz',
+14 verbose tar pack   '/Users/accord/Desktop/fresh start/NumberFormat' ]
+15 verbose tarball /Users/accord/.npm/react-input-number-format/1.0.0/package.tgz
+16 verbose folder /Users/accord/Desktop/fresh start/NumberFormat
+17 verbose addLocalTarball adding from inside cache /Users/accord/.npm/react-input-number-format/1.0.0/package.tgz
+18 verbose correctMkdir /Users/accord/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd react-input-number-format@1.0.0
+20 verbose afterAdd /Users/accord/.npm/react-input-number-format/1.0.0/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/accord/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/accord/.npm/react-input-number-format/1.0.0/package/package.json written
+23 silly publish { name: 'react-input-number-format',
+23 silly publish   version: '1.0.0',
+23 silly publish   description: 'A react component number format',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+23 silly publish   keywords: [ 'react', 'format' ],
+23 silly publish   author: { name: 'accord' },
+23 silly publish   license: 'ISC',
+23 silly publish   readme: '# react-input-format\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: 'a52cdcc50ed4896eec88f9f00d28b35ff76ab5a9',
+23 silly publish   _id: 'react-input-number-format@1.0.0',
+23 silly publish   _shasum: '8383cb4a0825bdd2c48a638b8613a1f79f96cf3d',
+23 silly publish   _from: '.' }
+24 verbose getPublishConfig undefined
+25 silly mapToRegistry name react-input-number-format
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: 'react-input-number-format',
+28 silly mapToRegistry   scope: null,
+28 silly mapToRegistry   escapedName: 'react-input-number-format',
+28 silly mapToRegistry   name: 'react-input-number-format',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/react-input-number-format
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /Users/accord/.npm/react-input-number-format/1.0.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/react-input-number-format
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 10:07:47
+35 verbose request using bearer token for auth
+36 verbose request id 1bb5e5dd50fd1f3b
+37 http request PUT https://registry.npmjs.org/react-input-number-format
+38 http 403 https://registry.npmjs.org/react-input-number-format
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 18 Apr 2017 02:07:49 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1492481269.115885,VS0,VE213',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 verbose request invalidating /Users/accord/.npm/registry.npmjs.org/react-input-number-format on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : react-input-number-format
+42 verbose stack     at makeError (/Users/accord/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/Users/accord/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/Users/accord/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/Users/accord/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/Users/accord/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/Users/accord/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:965:12)
+43 verbose statusCode 403
+44 verbose pkgid react-input-number-format
+45 verbose cwd /Users/accord/Desktop/fresh start/NumberFormat
+46 error Darwin 16.1.0
+47 error argv "/Users/accord/.nvm/versions/node/v6.9.1/bin/node" "/Users/accord/.nvm/versions/node/v6.9.1/bin/npm" "publish"
+48 error node v6.9.1
+49 error npm  v3.10.8
+50 error code E403
+51 error "You cannot publish over the previously published version 1.0.0." : react-input-number-format
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
