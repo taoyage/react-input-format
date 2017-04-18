@@ -3,7 +3,7 @@
  * @FileName: inputFormat.js 						   
  * @Date:   2017-04-17 18:27:24 						   
  * @Last Modified by:   accord 	   
- * @Last Modified time: 2017-04-17 18:27:56 	   
+ * @Last Modified time: 2017-04-18 09:12:35        
  */
 
 import React, { PropTypes } from 'react';
@@ -38,7 +38,7 @@ class NumberFormat extends React.Component {
             thousandSeparator = ','
         }
         return { thousandSeparator }
-    };xx
+    };
 
     /*格式化为数字*/
     getNumberRegex(g) {
@@ -116,7 +116,8 @@ class NumberFormat extends React.Component {
 
         return j;
     };
-
+    
+    //事件处理
     onChangeHandler(e, callback) {
         const el = e.target,
             inputValue = el.value,
@@ -140,7 +141,8 @@ class NumberFormat extends React.Component {
     onChange(e) {
         this.onChangeHandler(e, this.props.onChange);
     };
-
+    
+    //事件处理
     onKeyDown(e) {
         const el = e.target;
         const { selectionStart, selectionEnd, value } = el;
