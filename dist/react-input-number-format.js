@@ -22,7 +22,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var propTypes = {
     thousandSeparator: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.bool]),
     prefix: _propTypes2.default.string,
-    suffix: _propTypes2.default.string
+    suffix: _propTypes2.default.string,
+    displayType: _propTypes2.default.oneOf(['input', 'text'])
 };
 
 //设置默认props
@@ -46,11 +47,11 @@ var NumberFormat = function (_React$Component) {
         return _this;
     }
 
-    //获取分割符
-
-
     _createClass(NumberFormat, [{
         key: 'getSeparators',
+
+
+        //获取分割符
         value: function getSeparators() {
             var thousandSeparator = this.props.thousandSeparator;
 
@@ -59,11 +60,11 @@ var NumberFormat = function (_React$Component) {
             }
             return { thousandSeparator: thousandSeparator };
         }
-
-        /*格式化为数字*/
-
     }, {
         key: 'getNumberRegex',
+
+
+        /*格式化为数字*/
         value: function getNumberRegex(g) {
             return new RegExp('\\d' + '', g ? 'g' : undefined);
         }
@@ -154,9 +155,6 @@ var NumberFormat = function (_React$Component) {
         }
     }, {
         key: 'onChangeHandler',
-
-
-        //事件处理
         value: function onChangeHandler(e, callback) {
             var _this2 = this;
 
@@ -188,9 +186,6 @@ var NumberFormat = function (_React$Component) {
         }
     }, {
         key: 'onKeyDown',
-
-
-        //事件处理
         value: function onKeyDown(e) {
             var el = e.target;
             var selectionStart = el.selectionStart,
@@ -243,8 +238,9 @@ var NumberFormat = function (_React$Component) {
                     props,
                     this.state.value
                 );
+            } else {
+                return _react2.default.createElement('input', inputProps);
             }
-            return _react2.default.createElement('input', inputProps);
         }
     }]);
 

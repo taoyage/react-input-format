@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 //检测props
 const propTypes = {
     thousandSeparator: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     prefix: PropTypes.string,
     suffix: PropTypes.string,
+    displayType: PropTypes.oneOf(['input', 'text'])
 };
 
 //设置默认props
@@ -22,7 +22,7 @@ class NumberFormat extends React.Component {
         }
         this.onChange = this.onChange.bind(this);
         this.onKeyDown = this.onKeyDown.bind(this);
-    }
+    };
 
     //获取分割符
     getSeparators() {
@@ -31,7 +31,8 @@ class NumberFormat extends React.Component {
             thousandSeparator = ','
         }
         return { thousandSeparator }
-    }
+    };
+    xx
 
     /*格式化为数字*/
     getNumberRegex(g) {
@@ -110,7 +111,6 @@ class NumberFormat extends React.Component {
         return j;
     };
 
-    //事件处理
     onChangeHandler(e, callback) {
         const el = e.target,
             inputValue = el.value,
@@ -135,7 +135,6 @@ class NumberFormat extends React.Component {
         this.onChangeHandler(e, this.props.onChange);
     };
 
-    //事件处理
     onKeyDown(e) {
         const el = e.target;
         const { selectionStart, selectionEnd, value } = el;
@@ -178,12 +177,9 @@ class NumberFormat extends React.Component {
 
         if (this.props.displayType === 'text') {
             return (<span {...props}>{this.state.value}</span>);
+        } else {
+            return <input {...inputProps}/>
         }
-        return (
-            <input
-        {...inputProps}
-      />
-        )
     };
 };
 
