@@ -2,7 +2,7 @@
   "name": "react-input-number-format",
   "version": "1.1.0",
   "description": "A react component number format",
-  "main": "index.js",
+  "main": "dist/react-input-number-format",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
